@@ -6,9 +6,6 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# Build the application (skip tests for faster builds)
-RUN mvn clean package -DskipTests
-
 # ---- Run Stage ----
 FROM eclipse-temurin:23-jdk
 WORKDIR /usr/src/myapp
