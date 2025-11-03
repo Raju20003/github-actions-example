@@ -35,6 +35,6 @@ jobs:
         image: raju20003/springboot-images-new
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: src/main/docker/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
