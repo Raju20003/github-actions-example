@@ -10,9 +10,6 @@ COPY src ./src
 FROM eclipse-temurin:23-jdk
 WORKDIR /usr/src/myapp
 
-# Copy the built JAR from the build stage
-COPY --from=build /app/target/springboot-imagees-new.jar springboot-images-new.jar
-
 # Expose the application port
 EXPOSE 8080
 
